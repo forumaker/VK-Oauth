@@ -29,3 +29,4 @@ composer require forumaker/vk-oauth:"*"
 ## 🔗 Links
 - [**GitHub Repository**](https://github.com/forumaker/vk-oauth)
 - [**Packagist**](https://packagist.org/packages/forumaker/vk-oauth)
+- [**Discuss**](https://discuss.flarum.org/d/39702-vk-oauth-vk-id-for-fof-oauth)
