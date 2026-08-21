@@ -7,6 +7,10 @@ Adds a VK ID OAuth provider for [FoF OAuth](https://github.com/FriendsOfFlarum/o
 - ⚙️ VK ID login via FoF OAuth
 - 🎨 Styled login button for the forum frontend
 
+## 📸 Screenshots
+
+<img width="1600" height="700" alt="image" src="https://github.com/user-attachments/assets/c1eff275-67f7-4f12-9739-606e2c8adce2" />
+
 
 ## 📦 Installation
 Run this in your Flarum root directory:
