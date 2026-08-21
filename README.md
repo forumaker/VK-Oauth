@@ -17,7 +17,7 @@ composer require forumaker/vk-oauth:"*"
 
 
 ## 🛠️ Configuration
-1. Create an application at `https://id.vk.ru/about/business/go/accounts`
+1. Create an application at `https://id.vk.ru/about/business/`
 2. Set the callback URL to `https://your-forum.ru/auth/vk`
 3. Enter your Client ID and Secure key in the FoF OAuth provider settings
 

@@ -17,7 +17,7 @@ class Vk extends Provider
 
     public function link(): string
     {
-        return 'https://id.vk.ru/about/business/go/accounts';
+        return 'https://id.vk.ru/about/business/';
     }
 
     public function fields(): array
