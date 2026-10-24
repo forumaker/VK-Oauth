@@ -4,6 +4,7 @@ namespace forumaker\Vk\Providers;
 
 use Flarum\Forum\Auth\Registration;
 use FoF\OAuth\Provider;
+use Illuminate\Support\Str;
 use League\OAuth2\Client\Provider\AbstractProvider;
 use forumaker\Vk\OAuth2\VkProvider;
 use forumaker\Vk\OAuth2\VkResourceOwner;
@@ -67,7 +68,9 @@ class Vk extends Provider
 
     protected function sanitizeUsername(string $value): string
     {
-        $value = trim($value);
+        // Flarum's Registration::suggestUsername() drops everything outside a-z, 0-9, "-" and "_", which would turn a
+        // Cyrillic name into "-" — transliterate first so it survives as a Latin one.
+        $value = trim(Str::ascii($value));
         $value = preg_replace('/[^\pL\pN_\-]+/u', '-', $value) ?? $value;
         $value = trim($value, '-');
 
