@@ -2,7 +2,14 @@
   "name": "forumaker/vk-oauth",
   "description": "Adds a VK ID OAuth provider for FoF OAuth",
   "type": "flarum-extension",
-  "keywords": ["flarum", "flarum-extension", "vk", "vkontakte", "vkid", "oauth"],
+  "keywords": [
+    "flarum",
+    "flarum-extension",
+    "vk",
+    "vkontakte",
+    "vkid",
+    "oauth"
+  ],
   "license": "MIT",
   "homepage": "https://github.com/forumaker/VK-Oauth",
   "support": {
@@ -45,5 +52,21 @@
   },
   "config": {
     "sort-packages": true
-  }
+  },
+  "require-dev": {
+    "flarum/testing": "^2.0"
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "forumaker\\Vk\\Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "test": [
+      "@test:unit"
+    ],
+    "test:unit": "phpunit -c tests/phpunit.unit.xml"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
 }
